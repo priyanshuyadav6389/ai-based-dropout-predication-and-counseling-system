@@ -1,0 +1,62 @@
+{
+    "mcpServers": {
+        "files": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@modelcontextprotocol/server-files"
+            ],
+            "env": {}
+        },
+        "git": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@modelcontextprotocol/server-git"
+            ],
+            "env": {}
+        },
+        "web-search": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@modelcontextprotocol/server-web-search"
+            ],
+            "env": {
+                "SEARCH_PROVIDER": "brave",
+                "BRAVE_API_KEY": "YOUR_BRAVE_API_KEY"
+            }
+        },
+        "openapi": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@modelcontextprotocol/server-openapi"
+            ],
+            "env": {
+                "OPENAPI_SPEC_URL": "http://127.0.0.1:5000/openapi.json"
+            }
+        },
+        "sqlite": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@modelcontextprotocol/server-sqlite"
+            ],
+            "env": {
+                "SQLITE_DB_PATH": "C:\\Users\\homeo\\Desktop\\SIH-hackathon\\aibased-dropout-prediction\\backend\\instance\\student_dropout.db"
+            }
+        },
+        "shell": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@modelcontextprotocol/server-shell"
+            ],
+            "env": {
+                "ALLOW_LIST": "npm,vite,python,py,flask,pytest,node"
+            }
+        }
+    }
+}
+
